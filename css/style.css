@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden !important;
+  background-color: #faf9f6;
+}
+.navbar {
+  width: 100%;
+  background: #003d85;
+}
+.nav-div {
+  width: 100%;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 1rem;
+}
+.left-side {
+  width: 30%;
+}
+.right-side {
+  width: 20%;
+  padding-left: 12rem;
+}
+.navbar-text {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white !important;
+  font-weight: 600;
+}
+.dropdown-menu {
+  width: 17rem !important;
+  cursor: pointer;
+}
+.drop-list {
+  padding: 0.5rem 1rem !important;
+  text-align: left;
+  color: #666;
+}
+.dropdown-menu {
+  margin-right: 3rem;
+}
+.drop-list .logo {
+  display: block;
+  margin: 0 auto;
+}
+/* get pass style */
+.get-pass {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+.middle {
+  width: 35%;
+  display: flex;
+}
+.get-pass .form-style {
+  margin-left: 1rem !important;
+  position: relative;
+}
+.form-style .serch-icon {
+  position: absolute;
+}
+.new-get-pass {
+  background-color: #00d930;
+  height: 6vh;
+  padding: 0.6rem 1rem;
+  color: white;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.button button {
+  width: 10rem;
+  background-color: white;
+  border: 2px solid #37aee2;
+  color: blue;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.btns {
+  background-image: linear-gradient(-180deg, #37aee2 0%, #1e96c8 100%);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  height: 6vh;
+  color: #ffffff;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  padding: 0.6rem 0;
+  text-decoration: none;
+  width: 250px;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btns:hover,
+.btns:active {
+  background-image: linear-gradient(-180deg, #1d95c9 0%, #17759c 100%);
+}
+
+/* stock */
+.stock {
+  width: 100vw;
+  padding: 3rem;
+}
+.stock .card,
+.slip .card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slip {
+  width: 100%;
+  padding: 2rem;
+}
+.card {
+  border: 2px solid #8cc2da;
+  width: 45rem;
+}
+
+.slip .slip-nav {
+  width: 45rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-color: #1e96c8;
+  padding: 0.8rem;
+}
+.left-slip-nav {
+  width: 40%;
+  background-color: #1e96c8;
+}
+.right-slip-nav {
+  width: 60%;
+  display: flex;
+}
+.right-side .icons {
+  padding: 0 0.8rem;
+  /* margin: 0.7rem 0; */
+}
+.icons .icon {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 5px;
+  border-radius: 7px;
+  margin: 0.5rem 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #37aee2;
+}
+.slip-btn {
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  outline: none;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #1d95c9;
+  background-color: white;
+}
+.slip-nav .icons {
+  width: 100%;
+  display: flex;
+}
+.stars {
+  display: flex;
+  padding: 0.4rem;
+}
+.stars .star {
+  color: #ffc403;
+  font-size: 20px;
+}
+.dropdown-icon {
+  width: 100%;
+  background-color: #37aee2;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw !important;
+    height: 100vh !important;
+    overflow-x: hidden !important;
+  }
+  .nav-div {
+    width: 100%;
+    padding: 0.4 !important;
+  }
+  .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    padding-left: 2rem;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .navbar-text {
+    line-height: 1.5rem;
+    font-size: 1.2rem !important;
+  }
+  .right-side {
+    width: 90%;
+    padding-left: 12rem;
+  }
+  .drop-list {
+    width: 15rem !important;
+    padding: 0.7;
+    text-align: center;
+    color: #666;
+  }
+  .drop-list .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .dropdown-menu {
+    width: 17rem !important;
+    cursor: pointer;
+  }
+  /* get pass */
+  .get-pass {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    display: block;
+    margin: auto !important;
+  }
+  .get-pass button {
+    margin-left: 1.6rem !important;
+  }
+  .middle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    display: flex;
+  }
+  .middle.form-style {
+    width: 50%;
+    position: relative;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+}
